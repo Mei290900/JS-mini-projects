@@ -27,14 +27,14 @@
                 <div class="col ">
                     <img src="img/wind.png">
                     <div>
-                        
-                        <p class="humidity">32 km/h</p>
-                        <p class="wind">Wind Speed</p>
+
+                        <p class="wind">32 km/h</p>
+                        <p>Wind Speed</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 
     <script>
         const apiKey = "8aea2dea83f08548e050f5191dcb3d06";
@@ -53,7 +53,7 @@
             document.querySelector(".city").innerHTML = data.name;
             document.querySelector(".temp").innerHTML = Math.round(data.main.temp)+"°C";
             document.querySelector(".humidity").innerHTML = data.main.humidity+"%";
-            document.querySelector(".wind").innerHTML = data.wind.speed+ "km/h";
+            document.querySelector(".wind").innerHTML = data.wind.speed+ " km/h";
 
             if(data.weather[0].main == "Clouds"){
                 weatherIcon.src = "img/cloudy.png";
@@ -61,9 +61,9 @@
             else if(data.weather[0].main == "Clear"){
                 weatherIcon.src = "img/cloudy-and-sunny.png";
             }
-            else if(data.weather[0].main == "Rain"){
+            else if(data.weather[0,1].main == "Rain"){
                 weatherIcon.src = "img/rain.png";
-            }
+            }            
             else if(data.weather[0].main == "Mist"){
                 weatherIcon.src = "img/snowflake.png";
             }
