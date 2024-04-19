@@ -48,7 +48,16 @@ body {
 .card .search button img {
   width: 25px;
 }
+.card .error {
+  text-align: left;
+  padding-top: 15px;
+  margin-left: 10px;
+  display: none;
+}
 
+.weather {
+  display: none;
+}
 .weather .weather-icon {
   width: 110px;
   margin-top: 30px;
